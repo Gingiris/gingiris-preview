@@ -1,180 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gingiris - Growth Playbooks for AI & SaaS</title>
+    <meta name="description" content="Battle-tested playbooks for product launches, open source marketing, and B2B growth. By Iris, ex-AFFiNE COO (60k+ GitHub stars).">
+    <meta name="keywords" content="product launch, Product Hunt, open source marketing, B2B growth, SaaS, startup, growth playbook">
     
-    <!-- Primary Meta Tags -->
-    <title>Gingiris - 出海增长全栈资源 | Product Hunt打榜 · 开源营销 · B2B增长</title>
-    <meta name="title" content="Gingiris - 出海增长全栈资源 | Product Hunt打榜 · 开源营销 · B2B增长">
-    <meta name="description" content="出海增长实战指南：30x Product Hunt #1 冠军经验，从0到33k GitHub Stars开源营销打法，B2B SaaS增长手册，ASO冷启动。100+验证工具+4大Playbook免费开源。">
-    <meta name="keywords" content="出海增长, Product Hunt 打榜, Product Hunt launch, 开源营销, open source marketing, GitHub stars, B2B SaaS 增长, ASO, app store optimization, startup marketing, growth hacking, 冷启动, cold start, GTM, go-to-market">
-    <meta name="author" content="Iris (生姜iris)">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://gingiris.github.io/gingiris-hub/">
-    
-    <!-- Hreflang -->
-    <link rel="alternate" hreflang="zh" href="https://gingiris.github.io/gingiris-hub/">
-    <link rel="alternate" hreflang="en" href="https://gingiris.com/">
-    <link rel="alternate" hreflang="x-default" href="https://gingiris.github.io/gingiris-hub/">
-    
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gingiris - Growth Playbooks">
+    <meta property="og:description" content="Battle-tested playbooks for AI & SaaS growth. Product Hunt #1 Daily x30.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gingiris.github.io/gingiris-hub/">
-    <meta property="og:title" content="Gingiris - 出海增长全栈资源">
-    <meta property="og:description" content="30x Product Hunt #1 冠军的出海增长全栈资源。Product Hunt打榜、开源营销、B2B增长、ASO冷启动，100+增长工具。">
-    <meta property="og:image" content="https://gingiris.github.io/gingiris-hub/og-image.png">
-    <meta property="og:site_name" content="Gingiris">
-    <meta property="og:locale" content="zh_CN">
+    <meta property="og:url" content="https://gingiris.com">
     
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://gingiris.github.io/gingiris-hub/">
-    <meta name="twitter:title" content="Gingiris - 出海增长全栈资源">
-    <meta name="twitter:description" content="30x Product Hunt #1 冠军的出海增长全栈资源。Product Hunt打榜、开源营销、B2B增长、ASO冷启动。">
-    <meta name="twitter:image" content="https://gingiris.github.io/gingiris-hub/og-image.png">
-    <meta name="twitter:creator" content="@Iris_carrot">
+    <meta name="twitter:title" content="Gingiris - Growth Playbooks">
+    <meta name="twitter:description" content="Battle-tested playbooks for AI & SaaS growth.">
     
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Gingiris",
-        "url": "https://gingiris.com",
-        "logo": "https://gingiris.github.io/gingiris-hub/logo.png",
-        "description": "出海增长全栈资源库，提供Product Hunt打榜、开源营销、B2B SaaS增长、ASO冷启动等实战指南",
-        "founder": {
-            "@type": "Person",
-            "name": "Iris",
-            "alternateName": "生姜iris",
-            "jobTitle": "Growth Consultant, Ex-AFFiNE COO",
-            "url": "https://twitter.com/Iris_carrot",
-            "sameAs": [
-                "https://twitter.com/Iris_carrot",
-                "https://github.com/Gingiris"
-            ]
-        },
-        "sameAs": [
-            "https://github.com/Gingiris",
-            "https://twitter.com/Iris_carrot",
-            "https://gingiris.gumroad.com"
-        ]
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "如何在 Product Hunt 获得 #1？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Product Hunt #1 需要三个关键要素：1) 提前2-4周准备社区和KOL关系；2) Launch Day在PST 00:01发布，前4小时冲刺；3) 真实用户投票和高质量Maker评论。Gingiris Launch Playbook提供30x日榜冠军的完整SOP。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "开源项目如何快速增长 GitHub Stars？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "开源项目增长Stars的核心方法：1) GitHub Trending曝光（通过Reddit、HackerNews引流）；2) 优质README和文档；3) 建立Discord/Slack社区；4) 定期发布有价值的更新。AFFiNE从0到33k stars的经验详见Gingiris Opensource Playbook。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "B2B SaaS 如何选择 PLG 还是 SLG？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "PLG（产品驱动增长）适合：ARPU < $5000、用户可自助上手、产品有病毒传播性。SLG（销售驱动增长）适合：ARPU > $10000、需要定制部署、决策链复杂。很多成功SaaS采用PLG+SLG混合模式。"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "App 冷启动的最佳策略是什么？",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "App冷启动推荐策略：1) ASO优化（关键词、截图、描述）；2) 社交媒体种子用户（TikTok/Instagram/小红书）；3) KOL/UGC合作；4) 付费获客测试ROI。详见Gingiris ASO Growth Playbook。"
-                }
-            }
-        ]
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Gingiris Growth Playbooks",
-        "description": "出海增长实战指南系列",
-        "numberOfItems": 4,
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                    "@type": "Book",
-                    "name": "Product Hunt Launch Playbook",
-                    "description": "30x Product Hunt日榜冠军的完整打榜指南",
-                    "url": "https://github.com/Gingiris/gingiris-launch",
-                    "author": {"@type": "Person", "name": "Iris"}
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                    "@type": "Book",
-                    "name": "Open Source Marketing Playbook",
-                    "description": "从0到33k GitHub Stars的开源项目营销指南",
-                    "url": "https://github.com/Gingiris/gingiris-opensource",
-                    "author": {"@type": "Person", "name": "Iris"}
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                    "@type": "Book",
-                    "name": "B2B SaaS Growth Playbook",
-                    "description": "PLG+SLG双轮驱动，从PMF到$10M ARR",
-                    "url": "https://github.com/Gingiris/gingiris-b2b-growth",
-                    "author": {"@type": "Person", "name": "Iris"}
-                }
-            },
-            {
-                "@type": "ListItem",
-                "position": 4,
-                "item": {
-                    "@type": "Book",
-                    "name": "ASO & App Cold Start Playbook",
-                    "description": "移动应用出海冷启动和ASO优化实战",
-                    "url": "https://github.com/Gingiris/gingiris-aso-growth",
-                    "author": {"@type": "Person", "name": "Iris"}
-                }
-            }
-        ]
-    }
-    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫚</text></svg>">
     
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
         :root {
-            --primary: #8b5cf6;
-            --primary-dark: #7c3aed;
             --bg: #0a0a0a;
-            --card-bg: #141414;
-            --text: #ffffff;
+            --text: #fafafa;
             --text-muted: #a1a1aa;
             --border: #27272a;
-            --green: #22c55e;
-            --blue: #3b82f6;
-            --orange: #f97316;
-            --pink: #ec4899;
+            --accent: #f97316;
+            --card-bg: #18181b;
         }
         
         body {
@@ -182,645 +42,303 @@
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
+            min-height: 100vh;
         }
         
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
         
-        /* Hero */
-        .hero {
-            padding: 100px 0 80px;
+        header {
+            padding: 80px 0 60px;
             text-align: center;
-            background: radial-gradient(ellipse at top, #1a1a2e 0%, var(--bg) 70%);
         }
         
-        .hero-logo {
-            font-size: 3rem;
-            margin-bottom: 20px;
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
         }
         
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #fff 0%, #8b5cf6 50%, #ec4899 100%);
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
-        .hero p {
-            font-size: 1.3rem;
+        .subtitle {
+            font-size: 1.125rem;
             color: var(--text-muted);
-            max-width: 700px;
-            margin: 0 auto 40px;
+            max-width: 600px;
+            margin: 0 auto 24px;
         }
         
-        /* TL;DR for GEO - Key Takeaways */
-        .tldr {
-            background: rgba(139, 92, 246, 0.1);
-            border: 1px solid var(--primary);
-            border-radius: 12px;
-            padding: 24px;
-            margin: 0 auto 40px;
-            max-width: 800px;
-            text-align: left;
-        }
-        
-        .tldr h2 {
-            font-size: 1rem;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
-        
-        .tldr ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .tldr li {
-            padding: 8px 0;
-            padding-left: 24px;
-            position: relative;
-            color: var(--text-muted);
-        }
-        
-        .tldr li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--green);
-        }
-        
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-        
-        .stat { text-align: center; }
-        .stat-value { font-size: 2.5rem; font-weight: 800; color: var(--primary); }
-        .stat-label { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
-        
-        .hero-cta {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
+        .author {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 14px 28px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--pink) 100%);
-            color: white;
-        }
-        
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3); }
-        
-        .btn-secondary {
+            padding: 8px 16px;
             background: var(--card-bg);
-            color: white;
-            border: 1px solid var(--border);
-        }
-        
-        .btn-secondary:hover { border-color: var(--primary); }
-        
-        /* Section */
-        .section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-        }
-        
-        .section-title p {
+            border-radius: 100px;
+            font-size: 0.875rem;
             color: var(--text-muted);
-            font-size: 1.1rem;
         }
         
-        /* Playbooks Grid */
-        .playbooks-grid {
+        .author a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        .playbooks {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
+            padding: 40px 0 80px;
         }
         
-        .playbook-card {
+        .tools-banner {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 1px solid #f97316;
+            border-radius: 12px;
+            padding: 16px 24px;
+            text-align: center;
+            margin-top: 8px;
+        }
+        
+        .tools-banner p { margin: 0; font-size: 15px; }
+        .tools-banner a { color: #f97316; font-weight: 600; }
+        .tools-banner a:hover { text-decoration: underline; }
+        
+        .playbook {
             background: var(--card-bg);
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 32px;
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .playbook-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-        }
-        
-        .playbook-card.launch::before { background: var(--orange); }
-        .playbook-card.opensource::before { background: var(--green); }
-        .playbook-card.b2b::before { background: var(--blue); }
-        .playbook-card.aso::before { background: var(--pink); }
-        .playbook-card.tools::before { background: var(--primary); }
-        
-        .playbook-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--primary);
-        }
-        
-        .playbook-icon { font-size: 2.5rem; margin-bottom: 16px; }
-        .playbook-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; }
-        .playbook-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; }
-        
-        .playbook-meta {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 20px;
-            font-size: 13px;
-        }
-        
-        .playbook-meta span {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            color: var(--text-muted);
-        }
-        
-        .playbook-links {
-            display: flex;
-            gap: 12px;
-        }
-        
-        .playbook-link {
-            flex: 1;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.2s;
-        }
-        
-        .playbook-link.github {
-            background: rgba(255,255,255,0.1);
-            color: white;
-        }
-        
-        .playbook-link.github:hover { background: rgba(255,255,255,0.2); }
-        
-        .playbook-link.gumroad {
-            background: var(--primary);
-            color: white;
-        }
-        
-        .playbook-link.gumroad:hover { background: var(--primary-dark); }
-        
-        /* Tools Section */
-        .tools-preview {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .tools-categories {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            margin: 30px 0;
-        }
-        
-        .category-tag {
-            padding: 8px 16px;
-            background: rgba(139, 92, 246, 0.2);
-            border: 1px solid var(--primary);
-            border-radius: 20px;
-            font-size: 14px;
-            color: var(--primary);
-        }
-        
-        /* Free Tools */
-        .free-tools {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        
-        .free-tool {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 24px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            transition: all 0.2s;
             text-decoration: none;
             color: inherit;
+            transition: all 0.2s ease;
+            display: block;
         }
         
-        .free-tool:hover {
-            border-color: var(--green);
-            transform: translateX(8px);
+        .playbook:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
         }
         
-        .free-tool-icon { font-size: 2rem; }
-        .free-tool-info h4 { font-size: 1rem; margin-bottom: 4px; }
-        .free-tool-info p { font-size: 13px; color: var(--text-muted); }
-        .free-tool-badge {
-            margin-left: auto;
-            background: var(--green);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-        
-        /* FAQ Section for GEO */
-        .faq-section {
-            background: var(--card-bg);
-        }
-        
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 24px;
-        }
-        
-        .faq-item {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 24px;
-        }
-        
-        .faq-item h3 {
-            font-size: 1.1rem;
-            margin-bottom: 12px;
-            color: var(--primary);
-        }
-        
-        .faq-item p {
-            color: var(--text-muted);
-            font-size: 14px;
-            line-height: 1.7;
-        }
-        
-        /* Author */
-        .author-section {
-            background: linear-gradient(180deg, var(--bg) 0%, #1a1a2e 100%);
-            padding: 80px 0;
-        }
-        
-        .author-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 40px;
+        .playbook-header {
             display: flex;
-            align-items: center;
-            gap: 40px;
-            max-width: 800px;
-            margin: 0 auto;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 16px;
         }
         
-        .author-avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), var(--pink));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
+        .playbook-icon {
+            font-size: 2rem;
             flex-shrink: 0;
         }
         
-        .author-info h3 { font-size: 1.5rem; margin-bottom: 8px; }
-        .author-info p { color: var(--text-muted); margin-bottom: 16px; }
+        .playbook-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
         
-        .author-links {
+        .playbook-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        .playbook-desc {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        
+        .playbook-tags {
             display: flex;
-            gap: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
         }
         
-        .author-link {
-            padding: 8px 16px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 8px;
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
+        .tag {
+            padding: 4px 12px;
+            background: rgba(249, 115, 22, 0.1);
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            border-radius: 100px;
+            font-size: 0.75rem;
+            color: var(--accent);
         }
         
-        .author-link:hover { background: rgba(255,255,255,0.2); }
-        
-        /* Footer */
         footer {
-            padding: 40px 0;
             text-align: center;
+            padding: 40px 0;
             border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.875rem;
         }
         
-        footer p { color: var(--text-muted); font-size: 14px; }
-        footer a { color: var(--primary); text-decoration: none; }
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
         
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .hero-stats { gap: 30px; }
-            .author-card { flex-direction: column; text-align: center; }
-            .author-links { justify-content: center; }
-            .faq-grid { grid-template-columns: 1fr; }
+        footer a:hover {
+            color: var(--text);
+        }
+        
+        @media (max-width: 640px) {
+            h1 { font-size: 1.75rem; }
+            .stats { gap: 24px; }
+            .playbook { padding: 24px; }
+            .playbook-title { font-size: 1.25rem; }
         }
     </style>
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Gingiris",
+        "url": "https://gingiris.com",
+        "description": "Growth playbooks for AI & SaaS startups",
+        "founder": {
+            "@type": "Person",
+            "name": "Iris",
+            "alternateName": "生姜iris"
+        }
+    }
+    </script>
 </head>
 <body>
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-logo">🚀</div>
-            <h1>Gingiris 出海增长全栈</h1>
-            <p>从 Product Hunt 打榜到开源营销，从 B2B 增长到 ASO 冷启动，一站式出海增长资源库</p>
-            
-            <!-- TL;DR for GEO Citation -->
-            <div class="tldr">
-                <h2>📌 Key Takeaways</h2>
-                <ul>
-                    <li><strong>Product Hunt:</strong> 30x 日榜冠军经验，完整Launch Day SOP和社区预热策略</li>
-                    <li><strong>开源营销:</strong> AFFiNE 0→33k stars 实战复盘，GitHub Trending 打法</li>
-                    <li><strong>B2B 增长:</strong> PLG+SLG 双轮驱动，从PMF验证到$10M ARR路径</li>
-                    <li><strong>ASO 冷启动:</strong> 移动应用出海全链路，关键词优化+UGC运营</li>
-                    <li><strong>100+ 工具:</strong> 经过实战验证的增长工具库，覆盖14个分类</li>
-                </ul>
+    <div class="container">
+        <header>
+            <div class="logo">🫚</div>
+            <h1>Growth Playbooks</h1>
+            <p class="subtitle">
+                Battle-tested strategies for product launches, open source marketing, and B2B growth. 
+                Free, open source, and ready to use.
+            </p>
+            <div class="author">
+                By <a href="https://twitter.com/iris_carrot" target="_blank">Iris (生姜iris)</a> · Ex-AFFiNE COO
             </div>
-            
-            <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-value">30x</div>
-                    <div class="stat-label">PH Daily #1</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">33k+</div>
-                    <div class="stat-label">GitHub Stars</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">100+</div>
-                    <div class="stat-label">增长工具</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">4</div>
-                    <div class="stat-label">实战 Playbooks</div>
-                </div>
+        </header>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">30×</div>
+                <div class="stat-label">Product Hunt #1 Daily</div>
             </div>
-            
-            <div class="hero-cta">
-                <a href="https://gingiris.gumroad.com/l/gingiris-complete-global-launch-bundle" class="btn btn-primary">
-                    💎 获取完整 Bundle · $249
-                </a>
-                <a href="https://github.com/Gingiris" class="btn btn-secondary">
-                    ⭐ GitHub 免费版
-                </a>
+            <div class="stat">
+                <div class="stat-value">60k+</div>
+                <div class="stat-label">GitHub Stars</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">100+</div>
+                <div class="stat-label">Countries Reached</div>
             </div>
         </div>
-    </section>
-    
-    <!-- Playbooks -->
-    <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>📚 增长 Playbooks</h2>
-                <p>基于真实出海经验的实战指南，GitHub 开源 + Gumroad 深度版</p>
-            </div>
-            
-            <div class="playbooks-grid">
-                <article class="playbook-card launch">
-                    <div class="playbook-icon">🎯</div>
-                    <h3 class="playbook-title">Product Hunt 打榜指南</h3>
-                    <p class="playbook-desc">30x 日榜第一的完整打法，从准备到执行到复盘。包含Launch Day时间线、Maker Comment模板、社区预热SOP。</p>
-                    <div class="playbook-meta">
-                        <span>⭐ 178 stars</span>
-                        <span>📖 GTM + PH</span>
-                    </div>
-                    <div class="playbook-links">
-                        <a href="https://github.com/Gingiris/gingiris-launch" class="playbook-link github">GitHub 免费</a>
-                        <a href="https://gingiris.gumroad.com/l/zxamur" class="playbook-link gumroad">深度版 $49</a>
-                    </div>
-                </article>
-                
-                <article class="playbook-card opensource">
-                    <div class="playbook-icon">🌟</div>
-                    <h3 class="playbook-title">开源项目营销指南</h3>
-                    <p class="playbook-desc">0 到 33k stars 的实战经验。GitHub Trending策略、Reddit/HackerNews引流、社区运营、KOL合作。</p>
-                    <div class="playbook-meta">
-                        <span>⭐ 25 stars</span>
-                        <span>📖 OSS Marketing</span>
-                    </div>
-                    <div class="playbook-links">
-                        <a href="https://github.com/Gingiris/gingiris-opensource" class="playbook-link github">GitHub 免费</a>
-                        <a href="https://gingiris.gumroad.com/l/vhmkew" class="playbook-link gumroad">深度版 $49</a>
-                    </div>
-                </article>
-                
-                <article class="playbook-card b2b">
-                    <div class="playbook-icon">📈</div>
-                    <h3 class="playbook-title">B2B SaaS 增长手册</h3>
-                    <p class="playbook-desc">PLG + SLG 双轮驱动，从 PMF 到 $10M ARR。包含定价策略、客户成功、渠道合作案例。</p>
-                    <div class="playbook-meta">
-                        <span>⭐ 77 stars</span>
-                        <span>📖 B2B Growth</span>
-                    </div>
-                    <div class="playbook-links">
-                        <a href="https://github.com/Gingiris/gingiris-b2b-growth" class="playbook-link github">GitHub 免费</a>
-                        <a href="https://gingiris.gumroad.com/l/zaarq" class="playbook-link gumroad">深度版 $49</a>
-                    </div>
-                </article>
-                
-                <article class="playbook-card aso">
-                    <div class="playbook-icon">📱</div>
-                    <h3 class="playbook-title">App 冷启动 & ASO</h3>
-                    <p class="playbook-desc">移动应用出海冷启动，ASO 优化实战。关键词研究、截图优化、评分管理、UGC获取。</p>
-                    <div class="playbook-meta">
-                        <span>⭐ 9 stars</span>
-                        <span>📖 Mobile Growth</span>
-                    </div>
-                    <div class="playbook-links">
-                        <a href="https://github.com/Gingiris/gingiris-aso-growth" class="playbook-link github">GitHub 免费</a>
-                        <a href="https://gingiris.gumroad.com/l/nxkifd" class="playbook-link gumroad">深度版 $49</a>
-                    </div>
-                </article>
-                
-                <article class="playbook-card tools">
-                    <div class="playbook-icon">🛠️</div>
-                    <h3 class="playbook-title">出海增长工具集合</h3>
-                    <p class="playbook-desc">100+ 精选工具，14 个分类，一站式工具库。社媒监听、KOL管理、SEO、数据分析等。</p>
-                    <div class="playbook-meta">
-                        <span>🔧 100+ 工具</span>
-                        <span>📖 工具集</span>
-                    </div>
-                    <div class="playbook-links">
-                        <a href="https://github.com/Gingiris/growth-tools" class="playbook-link github">GitHub</a>
-                        <a href="https://gingiris.github.io/growth-tools/" class="playbook-link gumroad">在线浏览</a>
-                    </div>
-                </article>
-            </div>
+        
+        <div class="tools-banner">
+            <p>🚀 <strong>New:</strong> <a href="https://gingiris.github.io/growth-tools/" target="_blank">100+ Free Growth Tools</a> for Product Hunt launches, GitHub outreach, and SEO — hand-picked for AI/SaaS founders.</p>
         </div>
-    </section>
-    
-    <!-- Tools Preview -->
-    <section class="section" style="background: var(--card-bg);">
-        <div class="container">
-            <div class="section-title">
-                <h2>🛠️ 100+ 增长工具</h2>
-                <p>覆盖出海增长全链路，每个工具都经过实战验证</p>
-            </div>
-            
-            <div class="tools-categories">
-                <span class="category-tag">社媒监听</span>
-                <span class="category-tag">KOL 管理</span>
-                <span class="category-tag">Reddit 增长</span>
-                <span class="category-tag">SEO 工具</span>
-                <span class="category-tag">UGC 管理</span>
-                <span class="category-tag">链接追踪</span>
-                <span class="category-tag">内容创作</span>
-                <span class="category-tag">数据分析</span>
-            </div>
-            
-            <div style="text-align: center;">
-                <a href="https://gingiris.github.io/growth-tools/" class="btn btn-primary">
-                    浏览全部工具 →
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Free Tools -->
-    <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>⚡ 免费小工具</h2>
-                <p>即开即用，无需注册</p>
-            </div>
-            
-            <div class="free-tools">
-                <a href="https://gingiris.github.io/ph-comment-generator/" class="free-tool">
-                    <div class="free-tool-icon">💬</div>
-                    <div class="free-tool-info">
-                        <h4>PH Comment Generator</h4>
-                        <p>生成专业的 Product Hunt 评论</p>
-                    </div>
-                    <span class="free-tool-badge">FREE</span>
-                </a>
-                
-                <a href="https://gingiris.github.io/github-issue-generator/" class="free-tool">
-                    <div class="free-tool-icon">📝</div>
-                    <div class="free-tool-info">
-                        <h4>GitHub Issue Generator</h4>
-                        <p>生成开源项目 Outreach Issue</p>
-                    </div>
-                    <span class="free-tool-badge">FREE</span>
-                </a>
-                
-                <a href="https://gingiris.github.io/github-readme-generator/" class="free-tool">
-                    <div class="free-tool-icon">📄</div>
-                    <div class="free-tool-info">
-                        <h4>GitHub README Generator</h4>
-                        <p>生成专业的 README 模板</p>
-                    </div>
-                    <span class="free-tool-badge">FREE</span>
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ Section for GEO -->
-    <section class="section faq-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>❓ 常见问题</h2>
-                <p>出海增长的常见疑问解答</p>
-            </div>
-            
-            <div class="faq-grid">
-                <article class="faq-item">
-                    <h3>如何在 Product Hunt 获得 #1？</h3>
-                    <p>Product Hunt #1 需要三个关键要素：1) 提前2-4周准备社区和KOL关系；2) Launch Day在PST 00:01发布，前4小时冲刺；3) 真实用户投票和高质量Maker评论。Gingiris Launch Playbook提供30x日榜冠军的完整SOP。</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>开源项目如何快速增长 GitHub Stars？</h3>
-                    <p>开源项目增长Stars的核心方法：1) GitHub Trending曝光（通过Reddit、HackerNews引流）；2) 优质README和文档；3) 建立Discord/Slack社区；4) 定期发布有价值的更新。AFFiNE从0到33k stars的经验详见Gingiris Opensource Playbook。</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>B2B SaaS 如何选择 PLG 还是 SLG？</h3>
-                    <p>PLG（产品驱动增长）适合：ARPU < $5000、用户可自助上手、产品有病毒传播性。SLG（销售驱动增长）适合：ARPU > $10000、需要定制部署、决策链复杂。很多成功SaaS采用PLG+SLG混合模式。</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>App 冷启动的最佳策略是什么？</h3>
-                    <p>App冷启动推荐策略：1) ASO优化（关键词、截图、描述）；2) 社交媒体种子用户（TikTok/Instagram/小红书）；3) KOL/UGC合作；4) 付费获客测试ROI。详见Gingiris ASO Growth Playbook。</p>
-                </article>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Author -->
-    <section class="author-section">
-        <div class="container">
-            <div class="author-card">
-                <div class="author-avatar">🫚</div>
-                <div class="author-info">
-                    <h3>Iris 生姜iris</h3>
-                    <p>Ex-AFFiNE COO · 30x Product Hunt #1 · 帮助 AFFiNE 从 0 增长到 33k+ GitHub Stars</p>
-                    <p>现专注于出海增长咨询，已帮助 50+ 团队完成出海冷启动</p>
-                    <div class="author-links">
-                        <a href="https://twitter.com/Iris_carrot" class="author-link">Twitter</a>
-                        <a href="https://gingiris.com/zh/services" class="author-link">咨询服务</a>
-                        <a href="https://github.com/Gingiris" class="author-link">GitHub</a>
+        
+        <section class="playbooks">
+            <a href="https://github.com/Gingiris/gingiris-launch" class="playbook" target="_blank">
+                <div class="playbook-header">
+                    <span class="playbook-icon">🚀</span>
+                    <div>
+                        <h2 class="playbook-title">Product Launch Playbook</h2>
+                        <p class="playbook-subtitle">AI Product Global Launch Guide</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <p class="playbook-desc">
+                    Complete SOP for launching AI products globally. Product Hunt strategy, KOL outreach, 
+                    UGC growth, Reddit marketing. The exact playbook that achieved #1 Daily 30 times.
+                </p>
+                <div class="playbook-tags">
+                    <span class="tag">Product Hunt</span>
+                    <span class="tag">KOL Outreach</span>
+                    <span class="tag">Launch Strategy</span>
+                    <span class="tag">UGC</span>
+                </div>
+            </a>
+            
+            <a href="https://github.com/Gingiris/gingiris-opensource" class="playbook" target="_blank">
+                <div class="playbook-header">
+                    <span class="playbook-icon">⭐</span>
+                    <div>
+                        <h2 class="playbook-title">Open Source Playbook</h2>
+                        <p class="playbook-subtitle">OSS Launch Marketing Guide</p>
+                    </div>
+                </div>
+                <p class="playbook-desc">
+                    How we grew AFFiNE from 0 to 60k+ GitHub stars. GitHub optimization, developer community 
+                    building, Reddit strategy, Hacker News tactics, and KOL partnerships.
+                </p>
+                <div class="playbook-tags">
+                    <span class="tag">GitHub Stars</span>
+                    <span class="tag">Developer Marketing</span>
+                    <span class="tag">Community</span>
+                    <span class="tag">OSS</span>
+                </div>
+            </a>
+            
+            <a href="https://github.com/Gingiris/gingiris-b2b-growth" class="playbook" target="_blank">
+                <div class="playbook-header">
+                    <span class="playbook-icon">📈</span>
+                    <div>
+                        <h2 class="playbook-title">B2B Growth Playbook</h2>
+                        <p class="playbook-subtitle">Full-Lifecycle SaaS Growth Guide</p>
+                    </div>
+                </div>
+                <p class="playbook-desc">
+                    From PMF validation to ecosystem growth. Real case studies from HeyGen, Deel, Vercel, 
+                    Supabase. PLG/SLG strategies, affiliate marketing, channel partnerships.
+                </p>
+                <div class="playbook-tags">
+                    <span class="tag">B2B SaaS</span>
+                    <span class="tag">PLG</span>
+                    <span class="tag">Partnerships</span>
+                    <span class="tag">Case Studies</span>
+                </div>
+            </a>
+        </section>
+    </div>
     
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>
-                © 2026 <a href="https://gingiris.com">Gingiris</a> · 
-                Built with ❤️ by <a href="https://twitter.com/Iris_carrot">Iris</a>
+                MIT Licensed · 
+                <a href="https://github.com/Gingiris" target="_blank">GitHub</a> · 
+                <a href="https://twitter.com/iris_carrot" target="_blank">Twitter</a> · 
+                <a href="https://www.xiaohongshu.com/user/profile/生姜iris" target="_blank">小红书</a> ·
+                <a href="https://gingiris.github.io/growth-tools/" target="_blank">Growth Tools</a>
             </p>
         </div>
     </footer>
